@@ -1,0 +1,280 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* css for navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+position: absolute;
+top: 0px;
+/* position: sticky; */
+}
+
+/* css for logo & image */
+.logo{
+    margin: 2px 1px;
+}
+
+.logo img{
+    height: 95px;
+    margin: 2px 3px ;
+    filter: invert(100);
+    
+}
+.cn{
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgba(250, 253, 255, 0.315);
+}
+
+/* css for navbar <li>  */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: " ";
+    /* background-color: rgb(195, 191, 191); */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+    opacity: 10;
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1rem;
+    font-weight: bold;
+    /* background-color: black; */
+}
+#navbar ul li a{
+    color: rgb(0, 0, 0);
+ display: block;
+ padding: 3px 22px;
+ border-radius: 20px;
+ text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section css start from here  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 587px;
+}
+
+#home::before{
+    content: " ";
+    position: absolute;
+    background: url(Image.img/image\ 1.jpg);
+height: 190px;
+width: 100vw;
+z-index: -3;
+opacity: 0.89;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding-top: 30%;
+}
+#home h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+#home p1{
+    color: rgb(135, 2, 2);
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+}
+#home p1:hover{
+    background-color: rgb(155, 245, 245);
+}
+#home p2:hover{
+    background-color: rgb(220, 247, 121);
+}
+#home p2{
+    color: rgb(3, 24, 145);
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 2.2rem;
+    padding: 10px;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.h-primary center{
+    font-size: 2.2rem;
+    padding: 4px;
+    color: #a10606;
+    font-style: italic;
+    text-overflow: clip;
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+     
+}
+ 
+.h-secondary center{
+    font-size: 2.2rem;
+    padding: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    padding: 6px 20px ;
+    border: 2px solid white;
+    background-color: rgb(149, 239, 13);
+    border-radius: 21px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: aliceblue; 
+}
+
+
+
+/* our services css start here  */
+.box h3{
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+
+#services{
+    margin: 0px 10px 0 10px;
+    display: flex;
+    /* justify-content: center; */
+}
+
+#services .box {
+border: 2px solid red;
+padding: 14px;
+margin: 5px  5px;
+border-radius: 28px;
+background-color: #f2f2f2;
+}
+
+#services .box img{
+    height: 160px;
+    /* width: 150px; */
+    margin-left: 7px;
+    margin-right: 7px;
+    display: block;
+    padding: 14px;
+}
+ 
+
+/*  client css start from here */
+
+#client-section{
+/* height: 250px; */
+position: relative;
+}
+#client-section::before{
+    content: " ";
+    position: absolute;
+    background: url(Image.img/backgrd\ imge\ 3.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    z-index: 0;
+    opacity: 0.5;
+}
+.client-item{
+    padding: 30px;
+}
+#client{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#client img{
+    height: 124px;
+} 
+
+
+/* contact section */
+#contact{
+    position: relative;
+
+}
+
+#contact::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: 0;
+opacity: 0.5;
+background:url(Image.img/contact\ imge2.avif) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    color: yellowgreen;
+    padding: 0.8rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    
+}
+
+#contact-box form{
+    width:  40%;
+
+}
+#contact-box label{
+    font-size: 1.2rem;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+/* footer css start from here */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 9px 20px;
+ font-style: italic;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
